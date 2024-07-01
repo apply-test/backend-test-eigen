@@ -82,10 +82,9 @@ class BookCtrl {
             },
             through: {
               model: Borrow,
-              where: { returnDate: null }, // Hapus attributes: {...} karena where tidak menerima attributes
-              attributes: [], // Kosongkan attributes untuk menghindari include yang tidak valid
+              where: { returnDate: null },
+              attributes: [],
             },
-            // Hilangkan attributes dari through karena tidak perlu
           },
         ],
       });
